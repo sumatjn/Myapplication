@@ -1,0 +1,284 @@
+https://www.npmjs.com/
+https://nodejs.org/en/
+https://code.visualstudio.com/
+
+
+Basic JavaScript
+NPM
+Basic NodeJS(in built)(Os,file,http)
+NodeJS(full Stack App) (Node-EJS-Mongo-Express)
+Third Party Api (Weather Api)
+Redis
+Email With Node(Sendgrid)
+Github
+////////////////////////////////
+MongoDb Basic
+Api with NodeJS(Rest)
+DashBoard(Crud)
+Oauth(with github)
+OO_NodeJs
+Node-Es6(.babel)
+Login/Logout(JWT)
+NodeJs with postgres
+Testing
+GraphQl API
+ChatApp
+////////////////////
+Production 
+////////////////
+Pm2
+Docker
+Nginx
+Heroku
+
+
+Single Threaded Async Non Blocking I/O
+
+CallBack
+Event Loop Base structure
+
+function add(){
+
+}
+
+///////
+JSON > Key:Value
+JavaScript Object Notation
+[
+    {
+        name:"John",
+        class:'Node'
+    },
+    {
+        name:"Alvin",
+        class:'React'
+    }
+]
+
+
+//////////////////////////
+Create Package.json
+//////////////////////////
+> name
+> metadata
+> Description
+> Script (Start,build,dev,prod)
+> package name and version
+
+**NodeJs Must be installed in our system
+> navigate to the folder where you want file using cmd/terminal
+> npm init
+> answer all questions
+> type "yes"
+
+
+//////////////////////////
+Step to install packages
+//////////////////////////
+> navigate to the folder where you want file using cmd/terminal
+> npm install zone.js / npm i zone.js 
+
+localpackage > local to the folder
+global package
+Dev depedency
+
+//////////////////////////
+Step to Dev packages
+//////////////////////////
+npm i mocha  --save-dev
+
+
+/////////////////////
+Math.random()
+0.5563045285306278
+Math.random()
+0.5386901359941891
+Math.random()*100
+7.972128709845316
+Math.random()*100
+1.8652873588165253
+Math.random()*100
+84.23813743154314
+Math.random()*100
+48.55152313836106
+Math.floor(Math.random()*100)
+72
+Math.floor(Math.random()*100)
+82
+Math.floor(Math.random()*100)
+42
+Math.floor(Math.random()*100)
+89
+Math.floor(Math.random()*100)
+79
+
+Math.floor(Math.random()*(max-min))+min
+
+Math.floor(Math.random()*(20-1))+1
+
+
+///////////
+nodemon
+//////////
+#window
+> run cmd as admin
+> npm i -g nodemon
+
+#mac/linuc
+> open terminal
+> sudo npm i -g nodemon
+
+//////
+Template Engine
+> EJS
+> Vash
+> Swig
+> Handlebar
+
+
+Enviornment variable
+echo 'export PORT='9000''>dev.env
+source ./dev.env
+
+
+function add(a,b){
+    return a+b
+}
+
+
+add(1,2)
+
+
+////////
+MongoDB       VS     SQL
+
+Not A Sql             SQL
+Database              Database
+Collection            Table
+Document              Row
+JSON                  Tabluar
+
+Sno| Hindi | English
+1  |   80  |
+2  |       | 80
+
+SQL > OLTP data with proper/Same structure
+
+[
+    {
+        sno:1,
+        hindi:80
+    },
+    {
+        sno:2,
+        english:80
+    }
+]
+
+https://www.mongodb.com/try/download/community?tck=docs_server
+
+>in C drive make folder by name of data/db
+> open cmd
+   > Navigate to C:\Program File\MongoDB\Server\4.2\bin
+   > Type mongod
+
+>Open 2nd Cmd
+> Navigate to C:\Program File\MongoDB\Server\4.2\bin
+> mongo
+
+
+>>>>>>
+To see all Database > show dbs 
+
+//Create Database > use restaurants
+
+//Insert record
+db.first.insert({sno:1,name:'John'})
+db.first.insert({sno:2,name:'Ankit'})
+
+
+//Go Inside any database > use restaurants
+//To check collections> show collections
+//To see all data > 
+db.first.find({})
+
+//Insert Multiple record
+db.second.insertMany(
+    [
+        {
+            _id:1,
+            name:'John',
+            city:'Delhi'
+        },
+        {
+            _id:2,
+            name:'Alvin',
+            city:'Delhi'
+        },
+        {
+            _id:3,
+            name:'Neha',
+            city:'Newyork'
+        },
+        {
+            _id:4,
+            name:'Keiv',
+            city:'Pune'
+        },
+        {
+            _id:5,
+            name:'Zoe',
+            city:'Newyork'
+        }
+    ]
+)
+
+////Find with condition////
+
+db.second.find({city:'Delhi'})
+db.second.find({name:'Zoe'})
+db.restaurant.find().pretty()
+
+https://github.com/dmajkic/redis/downloads
+> redis-server
+> redis-cli  >6379
+
+> set key Value
+> get key
+> KEYS *
+
+npm i axios express redis
+
+
+
+//es5
+function add(a,b){
+    return a+b
+}
+
+//Es6
+var add = (a,b) => { return a+b}
+
+
+var a = 10
+var b = "my age is "+a
+//es5
+"my age is 10"
+//es6
+`my age is ${a}`
+
+
+///github
+>>>>>>FirstTime<<<<<<
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/Aakashdeveloper/testjuly.git
+git push -u origin master
+
+>>>>>>Next Time<<<<<<
+git add .
+git commit -m "first commit"
+git push
+
+git checkout -b myfeature
